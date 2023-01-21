@@ -8,9 +8,9 @@
 			<a href="#" class="w-32 text-dark px-5 py-3 rounded-t-xl bg-neutralDark hover:bg-primaryLight hover:text-white hover:font-bold">Prestamos</a>
 			<a href="#" class="w-32 text-dark px-5 py-3 rounded-t-xl bg-neutralDark hover:bg-primaryLight hover:text-white hover:font-bold">Cobros</a>
 
-			<button id="profile" class="flex items-center w-1/4 text-white px-5 py-2 space-x-5 rounded-t-xl bg-ctaLight hover:bg-ctaDark hover:text-white hover:font-bold">
+			<button id="profile" class="flex justify-around items-center md:w-64 text-white px-5 py-2 rounded-t-xl bg-ctaLight hover:bg-ctaDark hover:text-white">
 				<img class="h-8 rounded-full" src="<?php echo URLROOT; ?>/img/anya1.JPG" alt="">
-				<p class="">Alejandra P.</p>
+				<p class="">Alejandra Rivanderia</p>
 			</button>
 		</div>
 

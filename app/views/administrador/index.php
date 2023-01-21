@@ -10,7 +10,7 @@
 				<?php require APPROOT . '/views/administrador/partials/topbar.php' ?>
 						
 				<!-- responsive table container -->
-				<div class="flex flex-col shadow md:mt-2 md:space-y-0">
+				<div class="flex flex-col shadow md:mt-2 md:space-y-0 md:w-fit md:mx-auto">
 
 					<!-- columnas -->
 					<div class="hidden md:flex justify-even text-center text-neutralLight bg-primaryDark">
@@ -149,7 +149,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 	</div>
 
 	<?php require APPROOT . '/views/administrador/partials/modals.php' ?>
