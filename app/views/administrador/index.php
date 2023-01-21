@@ -5,27 +5,9 @@
 	<div class="w-full md:w-3/4 px-2 mx-auto bg-neutralLight md:border md:h-screen">
 		
 		<section id="main" class="flex flex-col space-y-2">
-			
 			<div class="flex flex-col">
 
-				<!-- section add & search -->
-				<div class="flex flex-col space-y-2 md:flex-row md:justify-between md:items-center md:w-full border-b py-2">
-					<div class="flex w-full md:px-5 md:w-1/2 justify-between">
-						<!-- add user -->
-						<button class="px-5 py-2 text-white text-lg rounded-xl bg-cta">Nuevo cliente</button>
-
-						<!-- pagination -->
-						<div class="flex md:w-auto py-2">
-							PAGINA 1 de 5.
-						</div>
-					</div>
-
-					<!-- search bar -->
-					<div class="flex w-full md:w-1/3 px-2 space-x-2 bg-neutral border border-dark">
-						<input type="search" class="w-full p-2 outline-none bg-neutral">
-		        <button class="w-12 text-xl"><i class="fa-solid fa-search"></i></button>
-					</div>
-				</div>
+				<?php require APPROOT . '/views/administrador/partials/topbar.php' ?>
 						
 				<!-- responsive table container -->
 				<div class="flex flex-col shadow md:mt-2 md:space-y-0">
@@ -45,7 +27,7 @@
 					<!-- filas -->
 					<div class="flex flex-col space-y-3 py-2 md:py-0 md:space-y-0 ">
 
-						<div class="text-sm text-dark border border-dark odd:bg-neutral even:bg-neutralLight md:flex md:border-none">
+						<div class="text-sm text-dark border border-dark odd:bg-neutral even:bg-white md:flex md:border-none">
 
 							<div class="flex items-center p-1 px-3 border-b border-dark md:p-0 md:w-72 md:border-none">
 								<div class="w-1/4 font-bold md:hidden">Nombre :</div>
@@ -84,7 +66,7 @@
 							</div>
 						</div>
 
-						<div class="text-sm text-dark border border-dark odd:bg-neutral even:bg-neutralLight md:flex md:border-none">
+						<div class="text-sm text-dark border border-dark odd:bg-neutral even:bg-white md:flex md:border-none">
 
 							<div class="flex items-center p-1 px-3 border-b border-dark md:p-0 md:w-72 md:border-none">
 								<div class="w-1/4 font-bold md:hidden">Nombre :</div>
@@ -112,18 +94,18 @@
 							</div>
 							
 							<div class="flex md:w-24">
-								<div class="w-1/2 flex items-center hover:bg-ctaDark hover:text-white text-xl justify-center">
+								<button class="w-1/2 flex items-center hover:bg-ctaDark hover:text-white text-xl justify-center">
 									<p class="md:hidden">Eliminar</p>
 									<i class="fa-solid fa-trash-can p-2"></i>
-								</div>
-								<div class="w-1/2 flex items-center justify-center hover:text-white hover:bg-ctaDark text-xl">
+								</button>
+								<button class="w-1/2 flex items-center justify-center hover:text-white hover:bg-ctaDark text-xl">
 									<p class="md:hidden">Editar</p>
 									<i class="fa-solid fa-edit p-2"></i>
-								</div>
+								</button>
 							</div>
 						</div>
 
-						<div class="text-sm text-dark border border-dark odd:bg-neutral even:bg-neutralLight md:flex md:border-none">
+						<div class="text-sm text-dark border border-dark odd:bg-neutral even:bg-white md:flex md:border-none">
 
 							<div class="flex items-center p-1 px-3 border-b border-dark md:p-0 md:w-72 md:border-none">
 								<div class="w-1/4 font-bold md:hidden">Nombre :</div>
@@ -151,14 +133,14 @@
 							</div>
 							
 							<div class="flex md:w-24">
-								<div class="w-1/2 flex items-center hover:bg-ctaDark hover:text-white text-xl justify-center">
+								<button class="w-1/2 flex items-center hover:bg-ctaDark hover:text-white text-xl justify-center">
 									<p class="md:hidden">Eliminar</p>
 									<i class="fa-solid fa-trash-can p-2"></i>
-								</div>
-								<div class="w-1/2 flex items-center justify-center hover:text-white hover:bg-ctaDark text-xl">
+								</button>
+								<button class="w-1/2 flex items-center justify-center hover:text-white hover:bg-ctaDark text-xl">
 									<p class="md:hidden">Editar</p>
 									<i class="fa-solid fa-edit p-2"></i>
-								</div>
+								</button>
 							</div>
 						</div>
 
@@ -167,6 +149,9 @@
 				</div>
 			</div>
 		</section>
+		
 	</div>
+
+	<?php require APPROOT . '/views/administrador/partials/modals.php' ?>
 
 <?php require APPROOT . '/views/administrador/partials/footer.php'; ?>

@@ -13,13 +13,38 @@ btn.addEventListener('click', () => {
 	nav.classList.toggle('hidden');
 })
 
-const btnPerfil = document.querySelector('#btn-perfil')
-const perfil = document.querySelector('#perfil')
+// const btnPerfil = document.querySelector('#btn-perfil')
+// const perfil = document.querySelector('#perfil')
 
-btnPerfil.addEventListener('click', () => {
-	perfil.classList.toggle('flex');
-	perfil.classList.toggle('hidden');
-})
+// btnPerfil.addEventListener('click', () => {
+// 	perfil.classList.toggle('flex');
+// 	perfil.classList.toggle('hidden');
+// })
 
 
 // document.write(new Date().getFullYear())
+
+// modal confirm delete
+
+// modal register new client
+const modalRegister = document.querySelector('#modal-register')
+
+const btnRegister = document.querySelector('#btn-register')
+btnRegister.addEventListener('click', () => {
+	modalRegister.classList.toggle('hidden')
+})
+
+const allBtnClose = document.querySelectorAll('#btn-close')
+allBtnClose.forEach( btn => {
+	btn.addEventListener('click', () => {
+	modalRegister.classList.toggle('hidden')
+	})
+})
+
+window.addEventListener('click', (e) => {
+	if (e.target == modalRegister) {
+		modalRegister.classList.toggle('hidden')
+	}
+})
+
+// modal edit client - user information
