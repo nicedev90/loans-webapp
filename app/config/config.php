@@ -5,6 +5,7 @@
 	define('DB_NAME', 'loans');
 
 	define('APPROOT', dirname(dirname(__FILE__)));
+	// for deploy change url root : https://zeusgymfit.000webhostapp.com
 	define('URLROOT', 'http://192.168.8.100/loans-webapp');
 	define('APPNAME', 'Loans System Co.');
 ?>

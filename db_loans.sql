@@ -94,3 +94,9 @@ CREATE TABLE IF NOT EXISTS user_token (
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
 )ENGINE=INNODB;
+
+
+INSERT INTO role (role) VALUES ('Administrador');
+INSERT INTO role (role) VALUES ('Cliente');
+INSERT INTO users(estado, role_id, nombres, email, password) VALUES('Activo', 1, 'Cesar', 'admin@g.com', '12');
+INSERT INTO users (estado, role_id, nombres, email, password) VALUES ('Activo', 2, 'Marta', 'marga@g.com', '12');
