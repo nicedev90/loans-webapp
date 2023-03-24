@@ -84,7 +84,7 @@
 						$password = $form['pass'];
 						$status = 'Fallido';
 
-						$this->model->acessLog($email, $password, $status);
+						$this->model->accessLog($email, $password, $status);
 						
 						$data = ['error' => 'La contraseña es incorrecta.'];
 						$this->view('pages/login', $data);
