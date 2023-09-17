@@ -1,5 +1,5 @@
-package.json
+#package.json
 package-lock.json
-input.css
+#input.css
 node_modules
-tailwind.config.js
+#tailwind.config.js
